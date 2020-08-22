@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../pages/Home.vue";
 
 Vue.use(VueRouter);
 
@@ -11,13 +11,37 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/my",
+    name: "My",
+    component: () => import(/* webpackChunkName: "about" */ "../pages/My.vue")
+  },
+  {
+    path: "/category",
+    name: "Category",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "about" */ "../pages/Category.vue")
+  },
+  {
+    path: "/chinese",
+    name: "Chinese",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../pages/Chinese.vue")
+  },
+  {
+    path: "/hd",
+    name: "Hd",
+    component: () => import(/* webpackChunkName: "about" */ "../pages/Hd.vue")
+  },
+  {
+    path: "/rank",
+    name: "Rank",
+    component: () => import(/* webpackChunkName: "about" */ "../pages/Rank.vue")
+  },
+  {
+    path: "/uncensored",
+    name: "Unsencored",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../pages/Uncensored.vue")
   }
 ];
 
