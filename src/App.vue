@@ -2,22 +2,22 @@
   <div id="app">
     <Header></Header>
     <router-view />
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+// import Footer from "@/components/Footer.vue";
 
 const name = "app";
 export default {
   name,
   components: {
-    Header,
-    Footer
+    Header
+    // Footer
   }
-}
+};
 </script>
 <style lang="less">
 #app {
@@ -27,6 +27,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   background-color: #333333;
+  background: #ffffff;
   height: 100vh;
 }
 * {

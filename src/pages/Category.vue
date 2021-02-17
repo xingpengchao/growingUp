@@ -4,28 +4,23 @@
 </template>
 
 <script>
+import axios from "axios"; // 引入axios
+
 const name = "category";
 export default {
   name,
   data() {
-    return {
-      
-    }
+    return {};
   },
-  computed: {
-    
-  },
-  created() {
-    
-  },
+  computed: {},
+  created() {},
   mounted() {
-    
+    axios.get("/getDemoList").then(res => {
+      // url即在mock.js中定义的
+      console.log(res.data); // 打印一下响应数据
+    });
   },
-  methods: {
-    
-  }
-}
+  methods: {}
+};
 </script>
-<style scoped lang='less'>
-
-</style>
+<style scoped lang="less"></style>

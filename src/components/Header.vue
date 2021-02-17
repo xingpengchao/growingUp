@@ -29,7 +29,7 @@ export default {
   components: {
     Search
   }
-}
+};
 </script>
 <style scoped lang="less">
 .header {
