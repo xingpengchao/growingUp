@@ -8,24 +8,12 @@ const name = "rank";
 export default {
   name,
   data() {
-    return {
-      
-    }
+    return {};
   },
-  computed: {
-    
-  },
-  created() {
-    
-  },
-  mounted() {
-    
-  },
-  methods: {
-    
-  }
-}
+  computed: {},
+  created() {},
+  mounted() {},
+  methods: {}
+};
 </script>
-<style scoped lang='less'>
-
-</style>
+<style scoped lang="less"></style>

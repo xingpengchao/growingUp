@@ -139,10 +139,10 @@ export default {
   },
   computed: {
     _class() {
-      return [`${name}-card`]
+      return [`${name}-card`];
     },
     _elCarousel() {
-      return [`${name}-carousel`]
+      return [`${name}-carousel`];
     }
   }
 };

@@ -9,9 +9,9 @@
 const name = "my";
 export default {
   name
-}
+};
 </script>
-<style scoped lang='less'>
+<style scoped lang="less">
 .my {
   a {
     font-weight: bold;
